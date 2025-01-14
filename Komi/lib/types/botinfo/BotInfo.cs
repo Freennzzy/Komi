@@ -31,6 +31,7 @@
     public class State
     {
         public int NetId { get; set; }
+        public int Level { get; set; }
         public int Gems { get; set; }
         public bool IsRunning { get; set; }
         public bool IsRedirecting { get; set; }

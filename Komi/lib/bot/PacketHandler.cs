@@ -270,6 +270,21 @@ public class PacketHandler
 
                         break;
                     }
+                    
+                }
+
+                break;
+            }
+
+            case EPacketType.NetMessageTrack:
+            {
+                var message = Encoding.UTF8.GetString(data);
+                var dataMap = utils.TextParse.ParseAndStoreAsDic(message);
+
+                if (dataMap.ContainsKey("Level"))
+                {
+                    string level = dataMap["Level"];
+                    bot.State.Level = int.Parse(level);
                 }
 
                 break;

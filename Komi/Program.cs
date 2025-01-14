@@ -38,7 +38,7 @@ class Program
         if (File.Exists("config.json")) return;
         var config = new Config()
         {
-            GameVersion = "4.64",
+            GameVersion = "5.02",
             Timeout = 5,
             FindPathDelay = 30,
             Bots = [],

@@ -14,6 +14,8 @@ namespace Komi.lib.gui.pages.bot_pages
             ImGui.SameLine();
             ImGui.Text($"| Timeout: {bot.Info.Timeout}");
             ImGui.Text($"Token: {bot.Info.Token}");
+            ImGui.Text($"Level: {bot.State.Level}");
+            ImGui.Text($"Gems: {bot.State.Gems}");
             ImGui.Text($"World: {bot.World.Name}");
             ImGui.Text($"Position: {(int)(bot.Position.X / 32)}, {(int)(bot.Position.Y / 32)}");
             ImGui.Text($"Ping: {bot.Info.Ping}");
